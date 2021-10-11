@@ -5,23 +5,12 @@ body {
   background-color: lightskyblue;
 }
 
-.title {
-  text-align: center;
-}
-
-.grid-cell {
-  background-color: white;
-  height: 160px;
-  padding: 1em;
-}
-
 .dashboard {
-  margin: auto;
-  margin-top: 5em;
-  width: 768px;
+  margin: 3rem auto;
+  max-width: 900px;
   display: grid;
   grid-gap: 0.75em;
-  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
   grid-template-areas:
     "title title title title"
     "monster welcome welcome welcome"
@@ -35,3 +24,14 @@ body {
 .customize { grid-area: customize; }
 .level-up { grid-area: level-up; }
 .play { grid-area: play; }
+
+.title {
+  text-align: center;
+}
+
+.grid-cell {
+  background-color: white;
+  padding: 1rem;
+  min-width: 160px;
+  min-height: 160px;
+}
